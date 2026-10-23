@@ -1,0 +1,50 @@
+{
+  "name": "@cocopon/m8-tracker-mcp",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/server.ts",
+    "prepublishOnly": "npm run build",
+    "format": "biome check --write",
+    "lint": "biome check",
+    "test": "mocha --node-option import=tsx 'src/**/*-test.ts'",
+    "capture": "tsx scripts/capture-fixture.ts"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "m8",
+    "dirtywave",
+    "tracker"
+  ],
+  "author": "cocopon",
+  "license": "MIT",
+  "description": "Unofficial MCP server for controlling a Dirtywave M8 over USB",
+  "type": "module",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "serialport": "^13.0.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.6.2",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^26.6.5",
+    "mocha": "^12.0.3",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "bin": {
+    "m8-tracker-mcp": "dist/server.js"
+  },
+  "files": [
+    "dist",
+    "!dist/**/*-test.js"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

@@ -1,0 +1,35 @@
+=== Palette ===
+a fg=#f0f0f0 bg=#303440
+b fg=#b0b0c0 bg=#303440
+c fg=#787c90 bg=#303440
+d fg=#98fcf8 bg=#303440
+e fg=#404050 bg=#303440
+f fg=#00fcf8 bg=#303440
+
+=== Screen ===
+                                        
+                                        
+ {d}PROJECT                                
+                                        
+ {b}TEMPO        {a}120.00 <>           {c}T>120 
+ {b}TRANSPOSE    {a}00                        
+ {b}GROOVE       {a}00{d}DEFAULT           {c}1 {e}--- 
+ {b}SCALE        {a}00{d}C CHROMATIC       {c}2 {e}--- 
+ {b}LIVE QUANTIZ {a}00{d}CHAIN LEN         {c}3 {e}--- 
+                                  {c}4 {e}--- 
+ {b}MIDI         {a}SETTINGS MAPPINGS   {c}5 {e}--- 
+                                  {c}6 {e}--- 
+ {f}NAME         {e}--{f}-{e}---------        {f}7 {e}--- 
+ {b}PROJECT      {a}LOAD SAVE NEW       {c}8 {e}--- 
+ {b}EXPORT/SHARE {a}RENDER BUNDLE             
+ {b}CLEAR UNUSED {a}PHRASES INST/TBL          
+ {b}INST. POOL   {a}VIEW INST.POOL            
+                                        
+ {b}TIME STATS   {a}VIEW TIME STATS     {f}P     
+ {b}SYSTEM       {a}SETTINGS USB-DRIVE  {c}SCPIT 
+                                  {c}V     
+                                        
+                                        
+
+=== Cursor ===
+line 13, columns 17-17: "-"
