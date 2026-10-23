@@ -2,8 +2,6 @@
 
 Unofficial [MCP](https://modelcontextprotocol.io) server for controlling a [Dirtywave M8](https://dirtywave.com) over USB.
 
-It reads the M8 screen as text, presses buttons, and plays notes.
-
 ## Requirements
 
 - Node.js 20 or later
@@ -23,30 +21,6 @@ Only one app can open the M8's serial port at a time. Close m8c or other clients
 | `press_note` | Press a note key (keyjazz) |
 | `get_system_info` | Get the model and firmware version |
 | `connect` / `disconnect` | Open or release the serial port |
-
-Button names follow the M8 labels: `up`, `down`, `left`, `right`, `shift`, `play`, `option`, `edit`.
-
-## Screen format
-
-`get_screen` returns the palette, the screen, and the cursor position:
-
-```
-=== Palette ===
-a fg=#787c90 bg=#303440
-b fg=#404050 bg=#303440
-...
-
-=== Screen ===
- {e}SONG
-...
- 00 {b}-- -- -- -- -- -- -- --
-...
-
-=== Cursor ===
-line 14, columns 23-24: "--"
-```
-
-`{x}` switches to palette slot `x`, and each line starts with slot `a`. Cursor columns don't count the tags.
 
 ## Development
 
