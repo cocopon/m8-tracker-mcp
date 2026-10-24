@@ -1,9 +1,10 @@
 # m8-tracker-mcp
-
 Unofficial [MCP](https://modelcontextprotocol.io) server for controlling a [Dirtywave M8](https://dirtywave.com) over USB.
 
-## Requirements
+https://github.com/user-attachments/assets/da976470-4959-4849-9671-ee1f7610f04a
 
+
+## Requirements
 - Node.js 20 or later
 - M8 connected over USB
 
@@ -11,8 +12,8 @@ Tested with M8 Model:01 on firmware 6.6.3 (macOS). Cursor detection assumes firm
 
 Only one app can open the M8's serial port at a time. Close m8c or other clients, or call `disconnect` first.
 
-## Tools
 
+## Tools
 | Tool | Description |
 | --- | --- |
 | `get_screen` | Read the screen as text |
@@ -22,8 +23,8 @@ Only one app can open the M8's serial port at a time. Close m8c or other clients
 | `get_system_info` | Get the model and firmware version |
 | `connect` / `disconnect` | Open or release the serial port |
 
-## Screen format
 
+## Screen format
 `get_screen` returns the palette, the screen, and the cursor position:
 
 ```
@@ -64,8 +65,8 @@ f fg=#00fcf8 bg=#303440
 line 14, columns 23-24: "--"
 ```
 
-## Development
 
+## Development
 ```sh
 npm install
 npm run dev
@@ -75,10 +76,10 @@ npm test
 
 Tests replay serial data recorded from a real M8 in `fixtures/`. To record a new one, run `npm run capture -- <name>` and check `<name>.txt` against the device.
 
-## Acknowledgments
 
+## Acknowledgments
 Serial protocol handling was implemented with reference to [m8c](https://github.com/laamaa/m8c) by Jonne Kokkonen.
 
-## License
 
+## License
 MIT License. See `LICENSE` for more information.
